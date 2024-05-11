@@ -2,6 +2,7 @@
 
 
 ## Project Demo
+![demo](https://github.com/Felleria/Phase-2-Code-Challenge-Bot-Battlr/assets/111077743/b3f3cec2-9a69-4178-b7d1-69126858a79d)
 
 ## Description
 Bot Command Center is a web application designed to manage a collection of bots and assemble them into a powerful bot army. With a sleek and intuitive user interface, users can explore a diverse range of bots, each with unique abilities and characteristics, and strategically enlist them into their army.
