@@ -1,68 +1,188 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.bot-card {
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+  width: 24%;
+  box-sizing: border-box;
+  background: white;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  border-radius: 10px;
+  margin-right: 11px;
+  float: left;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.bot-card .bot-card-content p {
+  max-height: 100px; 
+  overflow: hidden; 
+}
+
+.bot-card-content {
+  padding: 20px;
+}
+
+.bot-card img {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.bot-card h3 {
+  margin-top: 10px;
+}
+
+.bot-card p {
+  margin: 5px 0;
+}
+
+.bot-army {
+  background-color: #a6c657;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  clear: both;
+}
+
+.bot-army-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.bot-army-card h3 {
+  margin-top: 0;
+}
+
+.bot-specs {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bot-specs-image {
+  margin-right: 20px;
+}
+
+.bot-specs-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.bot-specs-catchphrase {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.catchphrase{
+  margin: 0;
+}
+
+.bot-specs-stats {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.effect {
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+.border {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.stat {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.bot-specs-stat {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 20px;
+  color: grey;
+}
+
+.bot-specs-class {
+  font-weight: bold;
+}
+
+.bot-specs-stat img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.bot-specs-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.bot-specs-buttons button, .release-btn {
+  margin-bottom: 5px;
+  width: 227px;
+  padding: 9px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+
+
+.bot-specs-buttons button:hover {
+  background: rgb(176, 176, 176);
+}
+
+.sort-bar {
+  margin-bottom: 10px;
+  clear: both;
+}
+
+.filter-bar {
+  margin-bottom: 10px;
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+.discharge-btn {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.discharge-btn:hover {
+  transform: scale(1.3);
 }
